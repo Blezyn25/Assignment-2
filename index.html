@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>My Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <img src="./img/Logo.png">
-    <h1>For Individuals</h1>
-    <p>Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
-    <section>
-        <form action="Submit" method="GET">
-            <label for="firstname">Firstname<input type="text" id="firstname" name="firstname"/></label>
-            <label for="lastname">Lastname<input type="text" id="lastname" name="lastname"/></label>
-            <label for="gender">Gender <select>
-                <option>Select here</option>
-            </select></label>
-            <label for="dob">Date of Birth<input type="date" id="dob" name="dob"/></label>
-            <label for="weight">Weight(KG)<input type="number" id="weight" name="weight" placeholder="Enter weight"/></label>
-            <label for="height">Height(CM)<input type="number" id="height" name="height" placeholder="Enter height"/></label>
-            <label for="activity">Activity Level <select>
-                <option>Select here</option>
-            </select></label>
-            <label for="password">Password<input type="password" id="password" name="password"/></label>
-        </form>
-        <input type="button" value="Register">
+    <section id="biggy">
+        <div class="hommie">
+            <h2>For Individuals</h2>
+            <p>Start benefiting from the wellness experience. For
+            companies looking on increasing productivity, and improving
+        organization wellness.</p>
+        </div>
+            
+        <div class="container">
+            <form action="" method="post">
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">First Name</label>
+                        <input type="text"  name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">last Name</label>
+                        <input type="text"  name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="gender">Gender</label>
+                        <input type="text"  name="gender" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="date">Date of birth</label>
+                        <input type="date"  name="date" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="weight">Weight (KG)</label>
+                        <input type="number" placeholder="Enter weight" name="weight" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="height">Height (CM)</label>
+                        <input type="number"  placeholder="Enter height" name="height" required>
+                    </div>
+                    <div class="input-box"> <label for="activity">Activity Level</label>
+                        <input type="number" placeholder="select here" name="activity" required></div>
+    
+                   <div class="input-box"> <label for="password">Password</label>
+                    <input type="password" placeholder="password" name="password" required></div>
+
+                     
+                </div> 
+            </form>
+            <div class="button-container">
+                <button>Register</button>
+            </div>
+           <div class="p"><p>By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
+        </div> </div>
     </section>
 </body>
-<footer>
-    <p>By clicking Register, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> </p>
-</footer>
 </html>
