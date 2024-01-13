@@ -1,22 +1,111 @@
-input, label, select{
-    display: block;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 body{
-    background-color: #f4fdf4;
-    font-family: sans-serif;
-    display: block;
+ align-items: center;
+ width: 100%;
+ padding: 50px;
 }
-@media only screen and (min-width: 992px) {
-    body {
-      font-size: 16px;
-      width: 80%;
-      margin: auto;
-    }
+#biggy{
+ max-width: 1400px;
+ padding: 28px;
+ margin: 0 28px;
+ overflow: hidden;
+ background: whitesmoke;
+ box-shadow: 0 15px 20px white;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 }
-@media only screen and (max-width: 767px) {
-    body {
-      font-size: 12px;
-      width: 100%;
-      margin: 0;
-    }
+
+h2{
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.container{
+  padding-left: 20px;
+  background-color: white;
+  border: 2px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 20px;
+  
+}
+.input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n){
+  justify-content: end;
+}
+.input-box label{
+  width: 95%;
+  color: black;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.input-box input{
+  height: 40px;
+  width: 95%;
+  padding: 0 10px;
+  border-radius:5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.input-box input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.input-place{
+  display: block;
+}
+.button-container button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  background-color: rgb(4, 255, 138);
+  cursor: pointer;
+  transition: 0.3s;
+}
+a{
+  color:  rgb(4, 255, 138);
+}
+
+
+
+
+@media(max-width:600px){
+  #biggy{
+      display: block;
+      min-width: 280px;
   }
+  .content{
+      display: block;
+      max-height: 380px;
+      overflow: auto;
+  }
+  .input-box{
+      display: block;
+      margin-bottom: 12px;
+      width: 100%;
+  }
+  .input-box:nth-child(2n){
+      justify-content: space-between;
+  }
+}
